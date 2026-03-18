@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.clawlock/
+*.db
+.master_key
+.env
