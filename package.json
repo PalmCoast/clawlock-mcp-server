@@ -1,8 +1,9 @@
 {
-  "name": "@agenthive/clawlock-mcp-server",
+  "name": "clawlock-mcp-server",
   "version": "1.0.0",
   "description": "ClawLock — MCP-native identity, credential vault, and audit layer for AI agents.",
   "main": "dist/index.js",
+  "files": ["dist", "README.md", "LICENSE"],
   "type": "module",
   "scripts": {
     "build": "npx tsc",
@@ -20,6 +21,14 @@
   ],
   "author": "AgentHive Inc. <coltsinsider@gmail.com>",
   "license": "BUSL-1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PalmCoast/clawlock-mcp-server.git"
+  },
+  "homepage": "https://clawlock-security.netlify.app",
+  "bin": {
+    "clawlock": "dist/index.js"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
     "sql.js": "^1.11.0",
