@@ -1,9 +1,13 @@
 {
   "name": "clawlock-mcp-server",
   "version": "1.0.0",
-  "description": "ClawLock — MCP-native identity, credential vault, and audit layer for AI agents.",
+  "description": "Bot Lock — MCP-native identity, credential vault, and audit layer for AI agents.",
   "main": "dist/index.js",
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "scripts": {
     "build": "npx tsc",
@@ -11,6 +15,7 @@
     "dev": "tsx src/index.ts"
   },
   "keywords": [
+    "bot-lock",
     "mcp",
     "security",
     "ai-agents",
@@ -27,6 +32,7 @@
   },
   "homepage": "https://clawlock-security.netlify.app",
   "bin": {
+    "bot-lock": "dist/index.js",
     "clawlock": "dist/index.js"
   },
   "dependencies": {
