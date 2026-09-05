@@ -9,7 +9,7 @@ import { join } from "path";
 import { homedir } from "os";
 
 // ============================================================
-// ClawLock MCP Server v1.0.0
+// Bot Lock MCP Server v1.0.0
 // Identity & Security for AI Agents
 // By AgentHive Inc. | BUSL-1.1
 // ============================================================
@@ -99,7 +99,7 @@ function requireLicense(action: string) {
   const { expired } = checkLicense();
   if (expired) {
     logAudit(null, action, null, "Trial expired", "denied");
-    throw new Error("ClawLock trial expired. Upgrade: https://clawlock-security.netlify.app/#pricing");
+    throw new Error("Bot Lock trial expired. Upgrade: https://clawlock-security.netlify.app/#pricing");
   }
 }
 
@@ -287,7 +287,7 @@ server.registerTool("clawlock_activate_license", {
 }, async ({ license_key, tier }) => {
   run("UPDATE license SET tier=?,license_key=?,activated_at=datetime('now') WHERE id='main'", [tier, license_key]);
   logAudit(null, "activate_license", null, `Activated: ${tier}`);
-  return { content: [{ type: "text", text: `License activated: ${tier}. Max agents: ${TIERS[tier].maxAgents}. Lock your claws.` }] };
+  return { content: [{ type: "text", text: `License activated: ${tier}. Max agents: ${TIERS[tier].maxAgents}. Lock your bots.` }] };
 });
 
 // ============================================================
@@ -314,7 +314,7 @@ async function main() {
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error(`ClawLock MCP Server v${VERSION} running (stdio)`);
+  console.error(`Bot Lock MCP Server v${VERSION} running (stdio)`);
 }
 
 main().catch(e => { console.error("Fatal:", e); process.exit(1); });

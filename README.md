@@ -1,4 +1,4 @@
-# 🔒 ClawLock — Identity & Security for AI Agents
+# 🔒 Bot Lock — Identity & Security for AI Agents
 
 **The MCP-native identity, credential vault, and audit layer every AI agent needs.**
 
@@ -21,7 +21,7 @@ Your agents run on **your** credentials. When they get compromised, **you** get 
 
 ## The Solution
 
-ClawLock gives every AI agent its own cryptographic identity, encrypted credential vault, and immutable audit trail.
+Bot Lock gives every AI agent its own cryptographic identity, encrypted credential vault, and immutable audit trail.
 
 | Feature | What It Does |
 |---|---|
@@ -35,7 +35,7 @@ ClawLock gives every AI agent its own cryptographic identity, encrypted credenti
 ## Quick Start
 
 ```bash
-git clone https://github.com/agenthive/clawlock-mcp-server.git
+git clone https://github.com/PalmCoast/clawlock-mcp-server.git
 cd clawlock-mcp-server
 npm install
 npm run build
@@ -79,6 +79,6 @@ Works with: OpenClaw, PicoClaw, ZeroClaw, IronClaw, TinyClaw, MimiClaw, Claude D
 
 Business Source License 1.1 (BUSL-1.1)
 
-Built by [AgentHive Inc.](https://agenthiveinc.com) | coltsinsider@gmail.com
+Built by [AgentHive Inc.](https://agenthiveinc.com)
 
-**Lock your claws.** 🔒🐝
+**Lock your bots.** 🔒
